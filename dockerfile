@@ -20,4 +20,4 @@ COPY --from=build /app/target/*.jar /app/
 ENV JAVA_OPTS=""
 
 # Запускаем приложение при запуске контейнера
-CMD ["java", "${JAVA_OPTS}", "-jar", "/app/*.jar"]
+CMD ["sh", "-c", "java $JAVA_OPTS -jar /app/app.jar"]
