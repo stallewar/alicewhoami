@@ -14,7 +14,7 @@ RUN mvn clean package
 FROM openjdk
 
 # Копируем собранный проект в контейнер
-COPY --from=build /app/target/*.jar /app/
+COPY --from=build /app/target/*.jar /app/app.jar
 
 # Устанавливаем переменную окружения для запуска приложения
 ENV JAVA_OPTS=""
