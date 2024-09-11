@@ -17,7 +17,7 @@ FROM openjdk
 COPY --from=build /app/target/*.jar /app/
 
 # Устанавливаем переменную окружения для запуска приложения
-# ENV JAVA_OPTS=-Xmx512m --не требуется для облачных платформ
+ENV JAVA_OPTS=""
 
 # Запускаем приложение при запуске контейнера
 CMD ["java", "${JAVA_OPTS}", "-jar", "/app/*.jar"]
