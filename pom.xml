@@ -90,12 +90,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<mainClass>zurnix.plermax.driv.alicewhoami.AlicewhoamiApplication</mainClass>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
+
 				</configuration>
 			</plugin>
 		</plugins>
